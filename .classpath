@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry exported="true" kind="lib" path="E:/eclipsejavaworkspace/XLS2XMLEricsson2014/jars/junit-3.8.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/eclipsejavaworkspace/XLS2XMLEricsson2014/jars/jxl-2.6.12.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/eclipsejavaworkspace/XLS2XMLEricsson2014/jars/log4j-1.2.14.jar"/>
+	<classpathentry exported="true" kind="lib" path="E:/eclipsejavaworkspace/XLS2XMLEricsson2014/jars/stax-utils-20060502.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
