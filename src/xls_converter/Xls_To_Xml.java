@@ -103,7 +103,7 @@ public class Xls_To_Xml {
 		
            Workbook wrk1 = null;
 		try {
-			wrk1 = Workbook.getWorkbook(new File("C:/Documents and Settings/adnane.acer/Bureau/XML_Neighbs_3g_aitbieda/3G_AitBieda_Relations_ADD.xls"));
+			wrk1 = Workbook.getWorkbook(new File("XML_Neighbs_3g_aitbieda/3G_AitBieda_Relations_ADD.xls"));
 		} catch (BiffException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -320,7 +320,7 @@ public class Xls_To_Xml {
               //transformer.setOutputProperty(OutputKeys.ENCODING,"UTF-8");
               DOMSource source = new DOMSource(doc);
                
-              StreamResult result =  new StreamResult(new File("C:/Documents and Settings/adnane.acer/Bureau/testing.xml"));
+              StreamResult result =  new StreamResult(new File("testing.xml"));
               transformer.transform(source, result);
 
               System.out.println("Writing XML Operation is Successfully Done");
@@ -340,10 +340,10 @@ public class Xls_To_Xml {
 		try {
 			db = dbf.newDocumentBuilder();
 		
-        Document doc1 = db.parse(new File("C:/Documents and Settings/adnane.acer/Bureau/testing.xml"));
+        Document doc1 = db.parse(new File("testing.xml"));
         doc1.normalizeDocument();
 
-        Document doc2 = db.parse(new File("C:/Documents and Settings/adnane.acer/Bureau/ref_utran.xml"));
+        Document doc2 = db.parse(new File("ref_utran.xml"));
         doc2.normalizeDocument();
 
         System.out.print(doc1.isEqualNode(doc2));
@@ -358,9 +358,9 @@ public class Xls_To_Xml {
           DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
 
           //root elements
-          Document doc = docBuilder.parse(new File("C:/Documents and Settings/adnane.acer/Bureau/ref_utran.xml"));//newDocument();
+          Document doc = docBuilder.parse(new File("ref_utran.xml"));
           TransformerFactory transformerFactory = TransformerFactory.newInstance();
-          Transformer transformer2 = transformerFactory.newTransformer((Source) new File("C:/Documents and Settings/adnane.acer/Bureau/ref_utran.xml"));
+          Transformer transformer2 = transformerFactory.newTransformer((Source) new File("ref_utran.xml"));
 		/*try {
 			 
 			File fXmlFile = new File("C:/Documents and Settings/adnane.acer/Bureau/ref_utran.xml");
