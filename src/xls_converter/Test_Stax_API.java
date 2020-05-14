@@ -20,19 +20,16 @@ public class Test_Stax_API {
 	 * @param args
 	 */
 	public static void main(String[] args) throws Exception{
-        String fileName = "C:/Documents and Settings/adnane.acer/Bureau/result_test_stax.xml";
+        String fileName = "result_test_stax.xml";
         XMLOutputFactory xof = XMLOutputFactory.newInstance();
         //xof.setProperty(XMLOutputFactory.IS_REPAIRING_NAMESPACES, "/n");
         FileOutputStream output = new FileOutputStream(fileName);
-        
-        XMLStreamWriter xtw  = xof.createXMLStreamWriter(output, "UTF-8");//new FileWriter(fileName));
+        XMLStreamWriter xtw  = xof.createXMLStreamWriter(output, "UTF-8");;
         
         xtw = new IndentingXMLStreamWriter(xtw);
-        
         xtw.writeStartDocument("UTF-8", "1.0");
                 
-          //xtw.
-			//xtw.writeComment("all elements here are explicitly in the HTML namespace");
+        //xtw.writeComment("all elements here are explicitly in the HTML namespace");
         xtw.setDefaultNamespace("Utran");//,"bulkCmConfigDataFile");
         xtw.writeStartElement("Utran","bulkCmConfigDataFile");
         xtw.writeAttribute("xmlns:un","utranNrm.xsd");
@@ -57,7 +54,7 @@ public class Test_Stax_API {
         
         Workbook wrk1 = null;
       		try {
-      			wrk1 = Workbook.getWorkbook(new File("C:/Documents and Settings/adnane.acer/Bureau/XML_Neighbs_3g_aitbieda/3G_AitBieda_Relations_ADD.xls"));
+      			wrk1 = Workbook.getWorkbook(new File("XML_Neighbs_3g_aitbieda/3G_AitBieda_Relations_ADD.xls"));
       		} catch (BiffException e) {
       			// TODO Auto-generated catch block
       			e.printStackTrace();
