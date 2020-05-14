@@ -27,7 +27,7 @@ public class Test_Xls2 {
 	    */
 		OutputStream outputStream;
 		try {
-			outputStream = new FileOutputStream(new File("C:/Documents and Settings/adnane.acer/Bureau/doc_test_xml_2.xml"));
+			outputStream = new FileOutputStream(new File("doc_test_xml_2.xml"));
 		
 		XMLStreamWriter out = XMLOutputFactory.newInstance().createXMLStreamWriter(new OutputStreamWriter(outputStream, "utf-8"));
 
